@@ -60,3 +60,14 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# tex
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+
+# temporary file
+*~
