@@ -11,6 +11,6 @@ view:
 	evince $(SRC).pdf
 
 .PHONY: $(SRC).pdf
+
 $(SRC).pdf:
-	$(PDC) --read=markdown --write=beamer --output=$(SRC).tex --latex-engine=pdflatex --reference-links --atx-headers --number-sections --standalone --template=./template/beamer_temp.tex --filter=./template/columnfilter.py $(SRC).md
-	$(PDFTEX) $(SRC).tex > $(LOG) 2>&1
+	$(PDC) --read=markdown --write=beamer --output=$(SRC).tex --latex-engine=pdflatex --reference-links --atx-headers --number-sections --standalone --template=./template/beamer_temp.tex --filter=./template/columnfilter.py $(SRC).md $(PDFTEX) $(SRC).tex > $(LOG) 2>&1
