@@ -1,0 +1,228 @@
+\documentclass[10pt,ignorenonframetext,xcolor={dvipsnames, table}]{beamer}
+
+%\usepackage{amssymb,amsmath}
+\usepackage{textcomp}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\frenchspacing % single space after a period
+
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+    %\usepackage{mathpazo}
+    % \usepackage{lmodern}
+  % \usepackage[sfdefault,light,condensed]{roboto}
+  \usepackage{PTSansNarrow} 
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  % \usepackage{mathpazo}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \usepackage{realscripts}
+  \usepackage{unicode-math}
+  \unimathsetup{math-style=TeX}
+
+\fi
+
+\usetheme{Madrid}
+
+
+\setbeamertemplate{footline}[frame number]
+
+\useinnertheme{rectangles}
+
+\usefonttheme{structurebold}
+
+
+\setbeamertemplate{bibliography item}{}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{frametitle continuation}[from second]
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\resetcounteronoverlays{exx}
+\beamertemplatenavigationsymbolsempty
+\setbeamercovered{transparent}
+
+\setbeamercolor{title}{bg=RoyalBlue}
+\setbeamercolor{frametitle}{fg=White,bg=RoyalBlue}
+\setbeamercolor{section in head/foot}{bg=RoyalBlue}
+\setbeamercolor{author in head/foot}{bg=RoyalBlue}
+\setbeamercolor{title in head/foot}{bg=RoyalBlue}
+\setbeamercolor{date in head/foot}{bg=RoyalBlue}
+
+\setbeamercolor{block title}{bg=RoyalBlue}
+\setbeamercolor{block body}{bg=RoyalBlue!10}
+\setbeamercolor*{caption name}{fg=RoyalBlue}
+\setbeamercolor*{item}{fg=RoyalBlue}
+\setbeamercolor*{subitem}{fg=RoyalBlue}
+\setbeamercolor*{enumerate item}{fg=Red}
+
+
+% use upquote for straight quotes in verbatim environments
+\usepackage{upquote}
+
+% use microtype
+\usepackage{microtype}
+
+% use csquotes
+\usepackage[style=british]{csquotes}
+
+
+
+
+
+
+
+\usepackage{caption}
+\setbeamerfont{caption}{series=\itshape, size=\fontsize{6}{8}} 
+
+
+\usepackage{graphicx}
+% \makeatletter
+% \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+% \def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+% \makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+% \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\urlstyle{same}  % don't use monospace font for urls
+
+\setbeamercolor{part title}{bg=RoyalBlue, fg=white}
+
+%% \setbeamertemplate{section page}
+%% {
+%%     \begin{centering}
+%%     \begin{beamercolorbox}[color=RoyalBlue,sep=12pt,center]{part title}
+%%     \usebeamerfont{section title}\insertsection\par
+%%     \end{beamercolorbox}
+%%     \end{centering}
+%% }
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame[noframenumbering,plain]{\partpage}
+}
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame[noframenumbering,plain]{\sectionpage}
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame[noframenumbering,plain]{\subsectionpage}
+}
+
+
+
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage[variant=british]{english}
+\else
+  \usepackage[british]{babel}
+\fi
+
+% can be removed if pandoc bug is resolved
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+\title{The ASCAT tandem operation scenario and \newline its implications on
+soil moisture retrievals}
+
+
+\author{Christoph Reimer, Sebastian Hahn, Andreea Plocon and Wolfgang Wagner}
+
+\institute{TU Wien, Department of Geodesy and Geoinformation, Research Group Remote
+Sensing E120.1}
+
+
+\date{SCAT Science Conference \newline 03rd February 2016}
+
+\titlegraphic{\includegraphics{./template/tulogo.png}}
+
+% Use Beamer's `\alert` for emphasis (but only for slides)
+\mode<presentation>{\let\emph\alert}
+
+% Give lines some space
+\mode<presentation>{\linespread{1.2}}
+
+% Use these cite commands to work with the style I've chosen
+\let\autocite\parencite
+\let\textcite\cite
+
+\begin{document}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+
+\begin{frame}{ASCAT tandem operation}
+
+\begin{itemize}
+\item
+  MetOp-A and B launched in same orbit
+\item
+  Separated by appr. 48 min.s
+
+  \begin{itemize}
+  \tightlist
+  \item
+    MetOp-A behind B with respect to UTC
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Spatial Coverage}
+
+\end{frame}
+
+\begin{frame}{Temporal Observation Separation}
+
+\end{frame}
+
+\begin{frame}{Soil Moisture Retrieval}
+
+Flowchart of current approach Flowchart of future approach
+
+\end{frame}
+
+\begin{frame}{ASCAT-B Level 1b calibration status}
+
+\begin{itemize}
+\tightlist
+\item
+  Inter-calibration with respect to ASCAT-A
+\end{itemize}
+
+\begin{figure}
+\includegraphics[width=.6\linewidth]{./figures/metop_b_ascat_calibration.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Impact on Model Parameter}
+
+\end{frame}
+
+\begin{frame}{Soil Moisture Validation In-situ}
+
+\end{frame}
+
+\begin{frame}{Soil Moisture Validation ERA-interim}
+
+\end{frame}
+
+\begin{frame}{Conclusion}
+
+\end{frame}
+
+
+
+
+
+\end{document}
