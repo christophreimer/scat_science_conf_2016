@@ -2,7 +2,7 @@
 title: The ASCAT tandem operation scenario and \newline its implications on soil moisture retrievals
 subtitle: 
 author: Christoph Reimer, Sebastian Hahn, Andreea Plocon and Wolfgang Wagner
-date: SCAT Science Conference \newline 03rd February 2016
+date: SCAT Science Conference \newline 3 February 2016
 affiliation: TU Wien, Department of Geodesy and Geoinformation, Research Group Remote Sensing E120.1
 logo: ./template/tulogo.png
 theme: Madrid
@@ -18,13 +18,16 @@ fontsize: 10pt
 * Separated by appr. 48 min.s
 	+ MetOp-A behind B with respect to UTC
 
+## Soil Moisture Retrieval
+Flowchart of current approach
+Flowchart of (near) future approach
+ * optimal solution to use both sensors
+ * what are the consequences for mp estimation
+
 ## Spatial Coverage
 
 ## Temporal Observation Separation
 
-## Soil Moisture Retrieval
-Flowchart of current approach
-Flowchart of future approach
 
 ## ASCAT-B Level 1b calibration status
 * Inter-calibration with respect to ASCAT-A
