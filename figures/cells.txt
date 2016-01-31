@@ -1,0 +1,31 @@
+1388
+1453
+1862
+2135
+2353
+
+461, 565, 775, 875, 952, 1323, 1359, 1395, 1388, 1398, 1453, 1648, 1862, 2037, 2112, 2135, 2353, 2153
+
+
+
+gpi: 815573 (cell 1388) / 1370623 (cell 1453)
+
+starker bias in dry reference
+
+
+gpi: 1294641
+azimuth different
+
+
+!!!maximum differences found!!!
+esd
+Cell: 875 GPI: 1813086 maxdiff: 0.0408153533936
+azimuth
+Cell: 2353 GPI: 1263245 maxdiff: 0.299366354942
+sc
+Cell: 1388 GPI: 765861 maxdiff: 0.0437740460038
+drywet
+Cell: 1388 GPI: 765861 maxdiff: 0.974714279175
+
+
+
