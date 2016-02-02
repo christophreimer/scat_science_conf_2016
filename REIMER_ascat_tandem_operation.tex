@@ -160,20 +160,61 @@ Sensing E120.1}
 \end{frame}
 
 
+\begin{frame}{Overview}
+
+\textbf{Needs to be done}
+
+\end{frame}
+
 \begin{frame}{ASCAT tandem operation}
+
+\begin{columns}
+
+\column{0.5\textwidth}
 
 \begin{itemize}
 \item
-  MetOp-A and B launched in same orbit
+  ASCAT tandem phase iniated with launch of ASCAT-B in Sept. 2012
 \item
-  Separated by appr. 48 min.s
+  ASCAT-A and B in same sun-synchronous orbit
 
   \begin{itemize}
   \tightlist
   \item
-    MetOp-A behind B with respect to UTC
+    phasing \textasciitilde{} 48 min. (half an orbit)
+  \end{itemize}
+\item
+  Phasing suboptimal for ASCAT sensor geometry
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ASCAT-A right interleave ASCAT-B left swath
+  \item
+    min. revisit times at equator \textasciitilde{} 48 min.
   \end{itemize}
 \end{itemize}
+
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.85\textwidth]{./figures/ASCAT_AB_phasing.png}
+\caption{Orbit Phasing ASCAT-A and ASCAT-B}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Revisit time statistics}
+
+\begin{figure}
+\includegraphics[width=0.85\textwidth]{./figures/revisit_freq_map_mean.png}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.85\textwidth]{./figures/revisit_freq_map_min.png}
+\end{figure}
 
 \end{frame}
 
@@ -185,15 +226,11 @@ estimation
 
 \end{frame}
 
-\begin{frame}{Spatial Coverage}
-
-\end{frame}
-
-\begin{frame}{Temporal Observation Separation}
-
-\end{frame}
-
 \begin{frame}{ASCAT-B Level 1b calibration status}
+
+\begin{columns}
+
+\column{0.4\textwidth}
 
 \begin{itemize}
 \tightlist
@@ -202,20 +239,179 @@ estimation
 \end{itemize}
 
 \begin{figure}
-\includegraphics[width=.6\linewidth]{./figures/metop_b_ascat_calibration.png}
+\includegraphics[width=.8\textwidth]{./figures/CalibrationRefModel1_A.png}
+\end{figure}
+
+\column{0.6\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  Long-term trend estimated over different cal. targets
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Amazon, Congo and Indonesia Rainforest
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\includegraphics[width=.8\textwidth]{./figures/metop_b_ascat_calibration.png}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Calibration induced SM bias}
+
+\begin{center}
+\textbf{Level 1 calibration bias of 0.1 dB between ASCAT-A and ASCAT-B}
+\end{center}
+
+\begin{figure}
+\includegraphics[width=.9\textwidth]{./figures/metop_b_ssm_cal_bias.png}
 \end{figure}
 
 \end{frame}
 
-\begin{frame}{Impact on Model Parameter}
+\begin{frame}{Soil moisture model parameter estimation}
+
+\begin{columns}
+
+\column{0.4\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  TU-Wien soil moisture model
+
+  \begin{itemize}
+  \tightlist
+  \item
+    physically motivated, semi-empirical change detection
+  \item
+    model parameters
+  \end{itemize}
+\end{itemize}
+
+\column{0.6\textwidth}
+
+testafasfddsafds asfdsafdsaf asdfdsa
+
+\end{columns}
 
 \end{frame}
 
-\begin{frame}{Soil Moisture Validation In-situ}
+\begin{frame}{Static parameter}
+
+\begin{columns}
+
+\column{0.4\textwidth}
+
+\textbf{ESD - Backscatter Noise}
+
+\begin{figure}
+\includegraphics[width=.9\textwidth]{./figures/esd_difference_GPI1813086.png}
+\end{figure}
+
+\column{0.6\textwidth}
+
+\textbf{Azimuth Correction}
+
+\begin{figure}
+\includegraphics[width=.9\textwidth]{./figures/azimuth_difference_GPI1263245.png}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Periodic parameter}
+
+\begin{columns}
+
+\column{0.4\textwidth}
+
+\textbf{Slope}
+
+\begin{figure}
+\includegraphics[width=.9\textwidth]{./figures/slope_difference_GPI765861.png}
+\end{figure}
+
+\column{0.6\textwidth}
+
+\textbf{Local Slopes}
+
+Image of local slope estimation
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Validation with respect to in-situ soil moisture}
+
+\begin{itemize}
+\tightlist
+\item
+  Validation of three ASCAT SSM products
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    ASCAT- A
+  \item
+    ASCAT-B
+  \item
+    ASCAT-A and ASCAT-B
+  \end{enumerate}
+\item
+  ISMN in-situ data
+
+  \begin{itemize}
+  \tightlist
+  \item
+    23 networks with xx stations in total
+  \item
+    sensor depth
+  \end{itemize}
+\item
+  Validation settings
+
+  \begin{itemize}
+  \item
+    scaling
+  \item
+    temporal matching
+  \item
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{In-situ validation results per network}
+
+\begin{figure}
+\includegraphics[height=0.8\textheight,keepaspectratio]{./figures/boxplot_ISMNnetwork_ASCAT.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{In-situ validation results global summary}
+
+\begin{figure}
+\includegraphics[height=0.8\textheight,keepaspectratio]{./figures/boxplot_ISMN_ASCAT_all_latitude.png}
+\end{figure}
 
 \end{frame}
 
 \begin{frame}{Soil Moisture Validation ERA-interim}
+
+begin\{figure\}
+\includegraphics[width=0.9/textwidth]{./figures/ASCAT_ERAINT_maps.png}
+\textbackslash{}end\{figure\}
 
 \end{frame}
 
